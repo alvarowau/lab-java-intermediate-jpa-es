@@ -1,0 +1,8 @@
+Consultas avanzadas con funciones específicas de la base de datos:
+El SQL nativo permite utilizar funciones avanzadas como GROUP BY, HAVING y funciones de ventana. Estas son útiles para realizar cálculos complejos, como totales acumulativos o promedios móviles. Por el contrario, JPQL no ofrece soporte para estas funciones, lo que limita la capacidad de ejecutar cálculos avanzados en la base de datos. Si tu aplicación requiere estos tipos de cálculos, es mejor optar por SQL nativo.
+
+Acceso a características exclusivas de la base de datos:
+Algunas bases de datos proporcionan tipos de datos y características que no están disponibles en JPQL, como JSONB en PostgreSQL o XML en Oracle. Si tu aplicación depende de estas características para el almacenamiento o manipulación de datos, solo el SQL nativo te permitirá aprovechar estas funcionalidades. Por ejemplo, si necesitas realizar consultas sobre un campo JSONB, deberás utilizar SQL nativo, ya que JPQL no ofrece esta opción.
+
+Mejoras en el rendimiento:
+En situaciones donde el rendimiento es crucial y se necesita un control más detallado sobre las consultas, el SQL nativo puede ofrecer ventajas significativas. Permite redactar consultas altamente optimizadas utilizando índices específicos, sugerencias de optimización o configuraciones avanzadas de la base de datos. Aunque JPQL puede lograr un buen rendimiento, su nivel de abstracción puede limitar el acceso a las optimizaciones más precisas que ofrece el SQL nativo. Si necesitas ajustar consultas para maximizar las capacidades de tu base de datos, el SQL nativo es la mejor opción.
